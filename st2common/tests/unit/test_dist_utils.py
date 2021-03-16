@@ -124,7 +124,7 @@ class DistUtilsTestCase(unittest2.TestCase):
         ]
         expected_links = [
             "git+https://github.com/Kami/logshipper.git@stackstorm_patched#egg=logshipper",
-            "git+https://github.com/Anshika-Gautam/orquesta.git@master#egg=orquesta",  # NOQA
+            "git+https://github.com/Anshika-Gautam/orquesta.git@v1.3.0#egg=orquesta",  # NOQA
             "git+https://github.com/StackStorm/st2-auth-backend-flat-file.git@master#egg=st2-auth-backend-flat-file",  # NOQA
             "git+https://github.com/Kami/logshipper.git@stackstorm_patched#egg=logshipper-editable",
             "git+https://github.com/StackStorm/st2.git#egg=python_runner&subdirectory=contrib/runners/python_runner",  # NOQA
