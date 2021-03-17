@@ -19,7 +19,7 @@ import copy
 
 import six
 import jsonschema
-from jsonschema import _validators
+from jsonschema import _validators, _legacy_validators
 from jsonschema.validators import create
 
 from st2common.exceptions.action import InvalidActionParameterException
@@ -128,7 +128,7 @@ CustomValidator = create(
         "oneOf": _validators.oneOf,
         "pattern": _validators.pattern,
         "patternProperties": _validators.patternProperties,
-        "properties": _validators.properties_draft3,
+        "properties": _legacy_validators.properties_draft3,
         "type": _validators.type,
         "uniqueItems": _validators.uniqueItems,
     },
