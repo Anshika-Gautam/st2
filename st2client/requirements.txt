@@ -9,7 +9,7 @@ argcomplete
 chardet<3.1.0
 cryptography==3.3.2
 jsonpath-rw==1.4.0
-jsonschema==2.6.0
+jsonschema==3.2.0
 more-itertools==5.0.0
 prettytable
 prompt-toolkit==1.0.15
