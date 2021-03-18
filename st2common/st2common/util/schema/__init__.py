@@ -346,10 +346,6 @@ def validate(
     if use_default and schema_type == "object" and instance_is_dict:
         instance = assign_default_values(instance=instance, schema=schema)
 
-    import logging
-    LOG = logging.getLogger("st2common.content.bootstrap")
-    LOG.warning("The variables to validate are utils-schema-init: %s",instance, exc_info=schema)
-        
     # pylint: disable=assignment-from-no-return
     jsonschema.validate(instance=instance, schema=schema, cls=cls, *args, **kwargs)
 
